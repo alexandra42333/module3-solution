@@ -1,0 +1,105 @@
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: darkslategrey;
+  background-color: white;
+}
+
+
+/********** header code****************/
+#header-nav {
+  background-color: black;
+  border-radius: 0; /** Um die Kanten von rund zu eckig zu machen**/
+  border: 0; /**no border only yellow color**/
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5em;
+  color: lightcyan;
+  font-weight: bold;
+  line-height: .75;
+  margin-top: 0;
+}
+
+
+/** Passe die Navigationsleiste an**/
+
+#nav-list{
+  margin-top: 10px;
+}
+
+/** zentriere & färbe Text in navbar list rot**/
+#nav-list a {
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+/** Gibt nav-bar list einen roten Hintergrund wenn man drüber fährt**/ 
+#nav-list a:hover {
+  background: #951C49;
+  font-weight: bold;
+  text-align: 1.2em;
+}
+
+/** make the color of button red**/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+/** passt die Maße vom Button zum Header an dass es keinen Overlap gibt**/
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+
+/***************************** MAIN CONTENT ***********************************/
+/**Wir brauchen wieder einen Anker **/
+.category-box { 
+  position: relative;
+  border: 2px solid black;
+  background-color: lightgray;
+  width: 100%;
+  margin: 25px auto 15px;
+}
+
+.category-box h3 { 
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.category-box p { 
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+
+/***************************Media Queries*****************************/
+
+/***Desktop (md)*****/
+@media (min-width: 992px) {
+#header-nav {
+  height: 62px;
+}
+}
+/***Tablet Version(sm)*****/
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-nav {
+    height: 62px;
+  }
+}
+/***Mobile (xs)*****/
+@media (max-width: 767px) {
+
+  /** Styling the Drop Down Menu**/
+  #collapsable-nav a { /* Collapsed nav menu text- passe den Text an, sodass er zum Glyphicon passt */
+    font-size: 1.2em;
+  }
+}
